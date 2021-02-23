@@ -1,8 +1,16 @@
 package libreria;
 
+import javax.swing.*;
+
 public class Ventana {
 
+    private String mensaje;
+
+    public Ventana(String mensaje){
+        this.mensaje= mensaje;
+    }
+
     public void visualizar(String mensaje){
-        System.out.println("sale por una ventana"+mensaje);
+        JOptionPane.showMessageDialog(null,"sale por una ventana"+mensaje);
     }
 }
