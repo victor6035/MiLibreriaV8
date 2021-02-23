@@ -4,6 +4,10 @@ public class Consola {
 
     private String mensaje;
 
+    public Consola(){
+
+    }
+
     public Consola(String mensaje){
         this.mensaje= mensaje;
     }
