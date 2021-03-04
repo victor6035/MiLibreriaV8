@@ -1,6 +1,6 @@
 package libreria;
 
-public class Consola {
+public class Consola implements DatosDeSalida{
 
     private String mensaje;
 
@@ -12,10 +12,11 @@ public class Consola {
         this.mensaje= mensaje;
     }
 
-    public  void visualizar(String mensaje){
 
+
+
+    @Override
+    public void visualizar() {
         System.out.println("sale por consola"+mensaje);
     }
-
-
 }

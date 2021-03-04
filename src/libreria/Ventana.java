@@ -2,7 +2,7 @@ package libreria;
 
 import javax.swing.*;
 
-public class Ventana {
+public class Ventana implements DatosDeSalida {
 
     private String mensaje;
 
@@ -15,8 +15,10 @@ public class Ventana {
         this.mensaje= mensaje;
     }
 
-    public void visualizar(String mensaje){
 
+
+    @Override
+    public void visualizar() {
         JOptionPane.showMessageDialog(null,"sale por una ventana"+mensaje);
     }
 }
