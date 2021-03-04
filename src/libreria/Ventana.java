@@ -11,10 +11,12 @@ public class Ventana {
     }
 
     public Ventana(String mensaje){
+
         this.mensaje= mensaje;
     }
 
     public void visualizar(String mensaje){
+
         JOptionPane.showMessageDialog(null,"sale por una ventana"+mensaje);
     }
 }
